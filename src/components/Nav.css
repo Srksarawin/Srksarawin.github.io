@@ -1,0 +1,113 @@
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(6, 10, 13, 0.7);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.25s ease, background 0.25s ease;
+}
+
+.nav--scrolled {
+  border-bottom-color: var(--border);
+  background: rgba(6, 10, 13, 0.92);
+}
+
+.nav__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 68px;
+}
+
+.nav__brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 17px;
+  color: var(--text-primary);
+}
+
+.nav__brand-mark {
+  font-family: var(--font-mono);
+  color: var(--accent-teal);
+  font-size: 15px;
+}
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav__links a {
+  font-size: 14.5px;
+  color: var(--text-muted);
+  transition: color 0.2s ease;
+}
+
+.nav__links a:hover {
+  color: var(--accent-teal);
+}
+
+.nav__cta {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  padding: 9px 18px;
+  border: 1px solid var(--accent-teal);
+  border-radius: 6px;
+  color: var(--accent-teal);
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.nav__cta:hover {
+  background: var(--accent-teal);
+  color: var(--bg);
+  box-shadow: 0 0 20px var(--accent-glow);
+}
+
+.nav__toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  padding: 8px;
+}
+
+.nav__toggle span {
+  width: 22px;
+  height: 2px;
+  background: var(--text-primary);
+}
+
+@media (max-width: 780px) {
+  .nav__links--desktop,
+  .nav__cta--desktop {
+    display: none;
+  }
+  .nav__toggle {
+    display: flex;
+  }
+  .nav__links--mobile {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    padding: 8px 20px 20px;
+    border-top: 1px solid var(--border);
+    background: var(--bg);
+  }
+  .nav__links--mobile a {
+    width: 100%;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .nav__links--mobile .nav__cta {
+    margin-top: 14px;
+    text-align: center;
+    border-bottom: none;
+  }
+}

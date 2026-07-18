@@ -1,0 +1,135 @@
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.timeline__item {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 24px;
+}
+
+.timeline__marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timeline__index {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--accent-teal);
+  background: var(--bg-panel);
+  border: 1px solid var(--border-bright);
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.timeline__line {
+  flex: 1;
+  width: 1px;
+  background: linear-gradient(var(--border-bright), transparent);
+  margin: 6px 0;
+}
+
+.timeline__item:last-child .timeline__line {
+  display: none;
+}
+
+.timeline__card {
+  padding-bottom: 48px;
+}
+
+.timeline__card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.timeline__role {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.timeline__org {
+  font-size: 14.5px;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.dot-sep {
+  color: var(--text-dim);
+}
+
+.timeline__period {
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  color: var(--accent-blue);
+  border: 1px solid var(--border-bright);
+  padding: 5px 11px;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+.timeline__points {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.timeline__points li {
+  position: relative;
+  padding-left: 20px;
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.timeline__points li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 6px;
+  height: 6px;
+  border-radius: 1px;
+  background: var(--accent-teal);
+  transform: rotate(45deg);
+}
+
+.timeline__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-dim);
+  border: 1px solid var(--border);
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+@media (max-width: 640px) {
+  .timeline__item {
+    grid-template-columns: 40px 1fr;
+    gap: 14px;
+  }
+  .timeline__index {
+    width: 30px;
+    height: 30px;
+    font-size: 10.5px;
+  }
+}
