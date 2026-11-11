@@ -13,7 +13,7 @@ export default function Contact() {
             Let's build something <span>intelligent</span> together.
           </h2>
           <p className="contact__subtitle">
-            Open to AI/ML engineering roles, freelance builds, and interesting collaborations.
+            Open to software engineering and AI/ML roles, freelance builds, and interesting collaborations.
           </p>
 
           <div className="contact__actions">

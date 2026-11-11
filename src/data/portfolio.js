@@ -5,72 +5,87 @@
 
 export const profile = {
   name: "Sarawin R",
-  role: "AI/ML Engineer",
-  tagline: "Building end-to-end LLM, computer vision & speech AI systems",
-  location: "Thoothukudi, Tamil Nadu, India",
+  role: "Software Engineer",
+  tagline: "Building cross-platform ERP & CRM apps and production AI systems",
+  location: "Chennai, Tamil Nadu, India",
   email: "srksarawin@gmail.com",
   phone: "+91-9342936495",
   github: "https://github.com/Srksarawin",
   linkedin: "https://linkedin.com/in/sarawin-r",
   summary:
-    "AI/ML Engineer with hands-on experience building end-to-end LLM, computer vision, and speech AI systems, achieving 90%+ accuracy in real-time detection and deployment. Skilled in Python, PyTorch, and full-stack development (React, Node.js), with a focus on shipping scalable, production-ready AI applications.",
+    "Software Engineer building cross-platform ERP and CRM apps with TypeScript, Node.js, React Native, and PostgreSQL. Delivered CV and OCR systems with 92% mAP detection and 98% document accuracy. IEEE-published AI researcher.",
   // Rotating keywords shown in the hero terminal sequence
-  focusAreas: ["LLMs & RAG", "Computer Vision", "Speech AI", "Full-Stack Systems"],
+  focusAreas: ["ERP & CRM Apps", "React Native", "Computer Vision & OCR", "LLMs & RAG"],
 };
 
 export const stats = [
+  { value: "8+", label: "ERP modules engineered" },
+  { value: "50+", label: "Defects resolved" },
   { value: "92%", label: "mAP · real-time detection" },
-  { value: "30+", label: "FPS multi-object CV pipeline" },
   { value: "98%", label: "OCR extraction accuracy" },
-  { value: "3", label: "Publications & internships" },
 ];
 
 export const skills = [
   {
     category: "Languages",
-    items: ["Python", "JavaScript", "SQL", "Java", "C", "HTML/CSS", "Golang"],
+    items: ["C", "Java", "Python", "SQL"],
+  },
+  {
+    category: "Web & App Development",
+    items: ["HTML", "CSS", "JavaScript", "TypeScript", "React", "React Native", "Vite", "Node.js", "Express.js"],
+  },
+  {
+    category: "Frameworks",
+    items: ["FastAPI", "PyTorch", "TensorFlow", "OpenCV", "MediaPipe", "YOLOv8", "Streamlit"],
+  },
+  {
+    category: "Databases / APIs",
+    items: ["PostgreSQL", "MS SQL Server", "MySQL", "REST APIs", "Socket.IO"],
   },
   {
     category: "AI / ML",
     items: [
-      "PyTorch",
-      "TensorFlow",
       "LangChain",
-      "Retrieval-Augmented Generation (RAG)",
-      "Vector DB",
+      "MCP",
+      "RAG",
+      "Vector Databases",
       "Embeddings",
-      "Transformers",
       "Prompt Engineering",
-      "Model Context Protocol (MCP)", "Fine-tuning", "LLaMA", "Large Language Models (LLMs)", "Faster-Whisper", "Speech-to-Text (STT)", "Text-to-Speech (TTS)", 
-      "Generative AI", "Prompt Patterns", "Keras"
+      "LLMs",
+      "Transformers",
+      "Fine-tuning",
     ],
   },
   {
-    category: "Computer Vision",
-    items: ["OpenCV", "YOLOv8", "Mediapipe", "Image Processing", "Object Detection", "Image Classification", "OCR"]
-  },
-  {
-    category: "Full-Stack",
-    items: ["React", "Vite", "Node.js", "Express.js", "FastAPI", "Streamlit"],
-  },
-  {
-    category: "Data & Infra",
-    items: ["MySQL","MS SQL Server", "REST APIs", "Socket.IO", "Git / GitHub", "Google Colab", "Hugging Face"],
+    category: "Tools",
+    items: ["Git", "GitHub", "Google Colab", "Hugging Face", "Claude (Opus)"],
   },
 ];
 
 export const experience = [
   {
-    role: "Full Stack Engineer Trainee",
+    role: "Software Engineer",
+    org: "NxtOrbis Technologies",
+    location: "Chennai",
+    period: "Sep 2026 — Present",
+    points: [
+      "Contribute to Brixora360, a cross-platform construction ERP for web, Android, and iOS, streamlining business workflows, minimizing manual data entry, and improving coordination across project management, procurement, finance, and site operations.",
+      "Engineer 8+ application modules, including purchase orders, budgeting, and site reporting, using TypeScript, Node.js, Express.js, PostgreSQL, and React Native, with Claude Opus for AI-assisted development, reducing feature delivery time by 30%.",
+      "Resolve 50+ defects through system design reviews, debugging, functional testing, and end-to-end validation, reducing production issues by 25% while contributing to the development and integration of a construction-focused CRM application.",
+    ],
+    tags: ["TypeScript", "Node.js", "Express.js", "PostgreSQL", "React Native"],
+  },
+  {
+    role: "Full Stack Developer Intern",
     org: "Logic Technologies",
     location: "Thoothukudi",
     period: "Jun 2026 — Jul 2026",
     points: [
-      "Engineered an OCR-based dispatch weighing system capturing LCD display images and extracting weight readings via Gemini OCR with custom preprocessing, eliminating manual entry and accelerating dispatch.",
-      "Developed full-stack Job Card Builder and Bill of Lading apps using React, Node.js, Express, and MS SQL, implementing CRUD, validation, and print/export for traceable production and shipping documentation.",
-      "Built a GPS Location Tracking PWA using React, Node.js, Express, and MS SQL to capture live coordinates, battery, and accuracy data, with polling-based real-time tracking and route-replay visualization.",
+      "Engineered an OCR dispatch weighing system extracting LCD weight readings via Gemini OCR with custom preprocessing, achieving 95% accuracy and cutting dispatch time by 40%.",
+      "Developed Job Card Builder and Bill of Lading apps (React, Node.js, Express.js, MS SQL) with CRUD, validation, and print/export, digitizing 100+ documents weekly and halving errors.",
+      "Built a GPS tracking PWA (React, Node.js, Express.js, MS SQL) capturing live location, battery, and accuracy data from 20+ devices via 10-second polling, with route replay.",
     ],
-    tags: ["React", "Node.js", "Express", "MS SQL", "OCR"],
+    tags: ["React", "Node.js", "Express.js", "MS SQL", "OCR"],
   },
   {
     role: "Artificial Intelligence Intern",
@@ -78,9 +93,9 @@ export const experience = [
     location: "Thoothukudi",
     period: "Dec 2025 — Jan 2026",
     points: [
-      "Designed end-to-end CV pipelines using Python, PyTorch, YOLOv8, OpenCV, and Colab for industrial safety, achieving real-time multi-object detection at 30+ FPS with 92% mAP.",
-      "Trained domain-specific deep learning models (smoking, spill, phone detection) on 1000+ image datasets, achieving 85–95% accuracy and exporting production-ready .pt/.onnx models for hazard monitoring.",
-      "Implemented spatio-temporal analytics including worker heatmaps, occupancy analysis, and prolonged presence detection, improving safety planning with 90%+ temporal anomaly detection accuracy.",
+      "Designed industrial-safety CV pipelines with Python, PyTorch, YOLOv8, and OpenCV, reaching real-time multi-object detection at 30+ FPS and 92% mAP.",
+      "Trained smoking, spill, and phone detection models on 1,000+ images with 85–95% accuracy, exporting .pt/.onnx models for deployment.",
+      "Implemented worker heatmaps, occupancy analytics, and prolonged-presence detection, flagging temporal anomalies with 90%+ accuracy.",
     ],
     tags: ["PyTorch", "YOLOv8", "OpenCV", "Computer Vision"],
   },
@@ -90,9 +105,9 @@ export const experience = [
     location: "Thoothukudi",
     period: "Jan 2025 — Mar 2025",
     points: [
-      "Created AI-powered OCR systems using Google Gemini, Python, and Streamlit, achieving ~98% accuracy in invoice processing and converting unstructured images into structured JSON.",
-      "Delivered CV solutions for container number extraction, license plate recognition, and prescription interpretation using generative AI and OCR, improving processing efficiency by ~70%.",
-      "Assembled multimedia processing apps including real-time speech-to-text (Python, Flask, JavaScript), resolution-preserving image resizing, and photo merging tools with low latency and high fidelity.",
+      "Created Gemini OCR systems in Python and Streamlit, converting unstructured invoice images into structured JSON with 98% accuracy.",
+      "Delivered generative AI and OCR solutions for container number, license plate, and prescription extraction, improving processing efficiency by 70%.",
+      "Assembled real-time speech-to-text (Python, Flask, JavaScript), resolution-preserving image resizing, and photo merging tools with low latency.",
     ],
     tags: ["Gemini API", "Streamlit", "OCR", "Flask"],
   },
@@ -103,26 +118,26 @@ export const projects = [
     title: "LLM-Based Offline Conversational AI Assistant",
     period: "Dec 2025 — Jan 2026",
     description:
-      "A hybrid, fully offline AI assistant pairing a local LLaMA (GGUF) model for contextual responses with Faster-Whisper for offline transcription — no external APIs, no cloud dependency.",
+      "A hybrid AI assistant using LLaMA (GGUF) for contextual responses and Faster Whisper for offline transcription — fully offline, CPU-only, no cloud dependency.",
     highlights: [
-      "~95% transcription accuracy in real-time, CPU-only environments",
-      "Offline text-to-speech (pyttsx3) with sub-2-second response generation and a cached audio pipeline",
-      "Multi-turn chat history retaining 10 prior messages, improving response coherence by ~30%",
+      "95% transcription accuracy in real-time CPU-only environments",
+      "Offline pyttsx3 text-to-speech with a cached audio pipeline, responding in under 2 seconds per query",
+      "Multi-turn chat history storing 10 previous messages, improving response coherence by 30%",
     ],
-    stack: ["Python", "LLaMA.cpp", "Faster-Whisper", "pyttsx3", "Streamlit"],
+    stack: ["Python", "Faster Whisper", "LLaMA.cpp", "pyttsx3", "Streamlit"],
     links: { github: "https://github.com/Srksarawin" },
   },
   {
     title: "AI-Based Hand Gesture Control System",
     period: "Aug 2025 — Oct 2025",
     description:
-      "A hybrid deep learning + rule-based system for touchless desktop control, mapping real-time hand gestures to precise system-level actions.",
+      "A hybrid deep learning and rule-based hand gesture recognition system using MediaPipe and TensorFlow for hands-free desktop navigation.",
     highlights: [
-      "~97% gesture recognition accuracy with under 100ms latency on live webcam input",
-      "AI-assisted debugging pipeline reduced false triggers by ~30%",
-      "Dual-hand tracking enabling drag, double-click, and system-level adjustments",
+      "97% accuracy and under 100 ms latency in live webcam tests",
+      "Dual-hand tracking and AI-assisted debugging reduced false gesture triggers by 30%",
+      "10+ gesture-to-action controls (drag, double-click, volume, brightness) at 30 FPS",
     ],
-    stack: ["Python", "TensorFlow", "OpenCV", "Mediapipe", "PyAutoGUI", "PyCAW"],
+    stack: ["Python", "TensorFlow", "OpenCV", "MediaPipe", "PyAutoGUI"],
     links: { github: "https://github.com/Srksarawin" },
   },
 ];
@@ -130,7 +145,7 @@ export const projects = [
 export const education = [
   {
     school: "M. Kumarasamy College of Engineering",
-    degree: "B.Tech — Artificial Intelligence and Data Science",
+    degree: "B.Tech — Artificial Intelligence and Data Science | CGPA: 7.77",
     location: "Karur",
     period: "Sep 2022 — Mar 2026",
   },
@@ -151,7 +166,7 @@ export const certifications = [
 export const publications = [
   {
     title: "Touchless Computer Control Through Hand Gesture Recognition and Speech Modeling",
-    venue: "IEEE — Published",
+    venue: "Published, IEEE",
   },
   {
     title: "Conversational Image Recognition Chatbot",
